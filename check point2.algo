@@ -23,4 +23,22 @@ BEGIN
             test:= true
                 sum=sum+arr2[j]
     END_FOR
+     FOR i FROM 0 TO 3 STEP 1  DO
+        FOR j FROM 0 TO 3 STEP 1  DO
+            IF (arr1[i]!= arr2[j]) THEN
+                test:=false
+            END_IF        
+        END_FOR
+            test:= true
+                sum=sum+arr1[i]
+    END_FOR
+    FOR j FROM 0 TO 3 STEP 1  DO
+        FOR i FROM 0 TO 3 STEP 1  DO
+            IF (arr2[j]!= arr1[i]) THEN
+                test:=false
+            END_IF        
+        END_FOR
+            test:= true
+                sum=sum+arr2[j]
+    END_FOR
 END
